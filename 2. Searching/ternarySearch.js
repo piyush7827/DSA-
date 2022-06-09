@@ -2,8 +2,8 @@ function ternarySearch(arr, key) {
   let start = 0;
   let end = arr.length - 1;
   while (start <= end) {
-    let mid1 = start + Math.floor((end - start) / 2);
-    let mid2 = end - Math.floor((end - start) / 2);
+    let mid1 = start + Math.floor((end - start) / 3);
+    let mid2 = end - Math.floor((end - start) / 3);
     if (arr[mid1] === key) {
       return mid1;
     } else if (arr[mid2] === key) {
