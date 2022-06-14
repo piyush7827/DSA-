@@ -11,7 +11,7 @@ var mergeTwoLists = function (list1, list2) {
   if (list2 == null) {
     return list1;
   }
-
+  // Decideing the head
   if (curr1.val <= curr2.val) {
     newLinkedlistHead = curr1;
     curr1 = curr1.next;
