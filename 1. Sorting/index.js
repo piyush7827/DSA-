@@ -45,8 +45,9 @@ function reverseArray(arr, n) {
 /* Utility function to
 	print an array */
 function printArray(arr, size) {
-  for (let i = 0; i < size; i++) document.write(arr[i] + " ");
-  document.write("<br>");
+  for (let i = 0; i < size; i++) {
+    console.log(arr[i] + " ");
+  }
 }
 
 // Driver code
@@ -54,5 +55,5 @@ let arr = [1, 2, 3, 4, 5, 6];
 let n = arr.length;
 printArray(arr, n);
 reverseArray(arr, n);
-document.write("Reversed array is<br>");
+console.log("Reversed array is<br>");
 printArray(arr, n);
